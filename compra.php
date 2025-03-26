@@ -5,12 +5,103 @@ include 'includes/db_connect.php';
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra de Entradas - Parque Acuático</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #e0f7ff;
+            /* Azul claro */
+        }
+
+        /* Encabezado */
+        header {
+            background: url('header.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+            padding: 40px 0;
+        }
+
+        /* Sección del formulario */
+        section#compra {
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section#compra form {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Campos del formulario */
+        label {
+            font-size: 18px;
+            color: #007bff;
+            /* Azul */
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #007bff;
+            /* Azul */
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="number"] {
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+        /* Botón de enviar */
+        button {
+            background: #007bff;
+            /* Azul */
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #0056b3;
+            /* Azul más oscuro */
+        }
+
+        /* Pie de página */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        h1{
+            color: #0056b3;
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
@@ -55,4 +146,5 @@ include 'includes/db_connect.php';
     </footer>
 
 </body>
+
 </html>

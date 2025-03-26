@@ -1,10 +1,13 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #e0f7ff; /* Azul claro */
 }
 
+/* Encabezado */
 header {
     background: url('header.jpg') no-repeat center;
     background-size: cover;
@@ -12,8 +15,9 @@ header {
     padding: 40px 0;
 }
 
+/* Navegación */
 nav ul {
-    background: #0056b3;
+    background: #0056b3; /* Azul oscuro */
     padding: 10px;
     list-style: none;
     display: flex;
@@ -30,10 +34,12 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Sección */
 section {
     padding: 40px 20px;
 }
 
+/* Grid de elementos */
 .grid {
     display: flex;
     justify-content: center;
@@ -49,6 +55,7 @@ section {
     border-radius: 10px;
 }
 
+/* Tabla */
 table {
     width: 80%;
     margin: auto;
@@ -56,13 +63,14 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #007bff; /* Azul */
     padding: 10px;
 }
 
+/* Botón */
 .btn {
     display: inline-block;
-    background: #ff9900;
+    background: #007bff; /* Azul */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -70,6 +78,11 @@ table, th, td {
     border-radius: 5px;
 }
 
+.btn:hover {
+    background: #0056b3; /* Azul oscuro */
+}
+
+/* Pie de página */
 footer {
     background: #222;
     color: white;

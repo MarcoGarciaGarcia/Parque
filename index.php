@@ -1,16 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parque Acuático - Inicio</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #e0f7ff;
+            /* Azul claro */
+        }
+
+        /* Encabezado */
+        header {
+            background: url('header.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+            padding: 40px 0;
+        }
+
+        /* Navegación */
+        nav ul {
+            background: #0056b3;
+            /* Azul oscuro */
+            padding: 10px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sección */
+        section {
+            padding: 40px 20px;
+        }
+
+        /* Grid de elementos */
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .item {
+            width: 30%;
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Tabla */
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #007bff;
+            /* Azul */
+            padding: 10px;
+        }
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            /* Azul */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            /* Azul oscuro */
+        }
+
+        h1,h5 {
+            color: #0056b3;
+            /* Azul oscuro */
+        }
+
+        /* Pie de página */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
         <h1>Bienvenido al Parque Acuático</h1>
-        <p>Disfruta de un día increíble con nosotros</p>
+        <h5>Disfruta de un día increíble con nosotros</h5>
     </header>
 
     <nav>
@@ -18,7 +123,7 @@
             <li><a href="#atracciones">Atracciones</a></li>
             <li><a href="#precios">Precios</a></li>
             <li><a href="#compra">Compra</a></li>
-            <li><a href="admin_login.php">Admin</a></li>
+            <li><a href="./admin/login.php">Admin</a></li>
         </ul>
     </nav>
 
@@ -36,6 +141,20 @@
             <div class="item">
                 <img src="assets/cabanas.jpg" alt="Cabañas">
                 <p>Cabañas para 4 y 6 personas</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="item">
+                <img src="assets/estacionamiento.jpg" alt="Alberca de Olas">
+                <p>Estacionamiento</p>
+            </div>
+            <div class="item">
+                <img src="assets/casas.jpg" alt="Lago Natural">
+                <p>Casas de campaña</p>
+            </div>
+            <div class="item">
+                <img src="assets/areas.jpg" alt="Cabañas">
+                <p>Áreas verdes</p>
             </div>
         </div>
     </section>
@@ -81,4 +200,5 @@
     </footer>
 
 </body>
+
 </html>
